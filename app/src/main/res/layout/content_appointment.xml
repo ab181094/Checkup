@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B8D4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csecu.amrit.checkup.activities.AppointmentActivity"
+    tools:showIn="@layout/activity_appointment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/app_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/app_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/app_et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/colorCyan"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:padding="10dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/app_spinner_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/colorCyan"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:padding="10dp"
+                    android:text="@string/date"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/app_tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/app_bt_date"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onDatePick"
+                    android:text="@string/pick" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

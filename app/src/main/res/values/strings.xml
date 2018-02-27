@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Check up</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_registration">Sign up</string>
+    <string name="default_notification_channel_id" translatable="false">Checkup</string>
+    <string name="default_notification_channel_name" translatable="true">Appointment</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Re-type password</string>
+    <string name="qualifications">Qualifications</string>
+    <string name="speciality">Speciality</string>
+    <string name="chamber">Chamber</string>
+    <string name="gender">Gender</string>
+    <string name="visiting_days">Visiting Days</string>
+    <string name="sun">S</string>
+    <string name="mon">M</string>
+    <string name="tue">T</string>
+    <string name="wed">W</string>
+    <string name="thu">Th</string>
+    <string name="fri">F</string>
+    <string name="sat">Sa</string>
+    <string name="start_time">Start Time</string>
+    <string name="pick">Pick</string>
+    <string name="end_time">End Time</string>
+    <string name="permission_rationale">"External storage permissions are needed for picture"</string>
+    <string name="max_patient">Max. Patient</string>
+    <string name="visiting_fee">Visiting Fee</string>
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_image">Image</string>
+    <string name="user">User</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_doctors_list">Doctors List</string>
+    <string name="title_activity_doctor_details">Doctor Details</string>
+    <string name="title_activity_appointment">Appointment</string>
+    <string name="sign_in">Sign in</string>
+    <string name="registration_no">Registration No.</string>
+    <string name="visiting_time">Visiting Time</string>
+    <string name="take_appointment">Take Appointment</string>
+    <string name="age">Age</string>
+    <string name="date">Date</string>
+    <string name="title_activity_cancel">Cancel Appointment</string>
+    <string name="c">C</string>
+    <string name="copyright_2018">Copyright 2018</string>
+</resources>

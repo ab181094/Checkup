@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B8D4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csecu.amrit.checkup.activities.RegistrationActivity"
+    tools:showIn="@layout/activity_registration">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <EditText
+                android:id="@+id/reg_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/re_type_password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/qualifications"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/speciality"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_chamber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/chamber"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_patient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/max_patient"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/reg_et_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:ems="10"
+                android:hint="@string/visiting_fee"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/colorCyan"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:padding="10dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/reg_spinner_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorCyan"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:padding="10dp"
+                android:text="@string/visiting_days"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/reg_tg_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/sun"
+                    android:textOn="@string/sun" />
+
+                <ToggleButton
+                    android:id="@+id/reg_tg_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/mon"
+                    android:textOn="@string/mon" />
+
+                <ToggleButton
+                    android:id="@+id/reg_tg_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/tue"
+                    android:textOn="@string/tue" />
+
+                <ToggleButton
+                    android:id="@+id/reg_tg_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/wed"
+                    android:textOn="@string/wed" />
+
+                <ToggleButton
+                    android:id="@+id/reg_tg_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/thu"
+                    android:textOn="@string/thu" />
+
+                <ToggleButton
+                    android:id="@+id/reg_tg_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/fri"
+                    android:textOn="@string/fri" />
+
+                <ToggleButton
+                    android:id="@+id/reg_tg_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/sat"
+                    android:textOn="@string/sat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/colorCyan"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:padding="10dp"
+                    android:text="@string/start_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/reg_tv_startTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/start_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/reg_bt_startTime"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onStartTime"
+                    android:text="@string/pick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/colorCyan"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:padding="10dp"
+                    android:text="@string/end_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/reg_tv_endTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/end_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/reg_bt_endTime"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onEndTime"
+                    android:text="@string/pick" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

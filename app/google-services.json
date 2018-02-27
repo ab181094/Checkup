@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "43728012148",
+    "firebase_url": "https://checkup-47a00.firebaseio.com",
+    "project_id": "checkup-47a00",
+    "storage_bucket": "checkup-47a00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43728012148:android:08f8bf7278c8c8a0",
+        "android_client_info": {
+          "package_name": "com.csecu.amrit.checkup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43728012148-51tcvma5ckmpnnmvhloa3kese9jvph55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.csecu.amrit.checkup",
+            "certificate_hash": "77874fa189a3ff0d49f302756c51e1d2b24d2b53"
+          }
+        },
+        {
+          "client_id": "43728012148-gc0pc4rl8tgli0pvs70njn6hmdo3i7pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALZokLiBUwyLIosTtuZ0izTAfhUpH7His"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43728012148-gc0pc4rl8tgli0pvs70njn6hmdo3i7pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
